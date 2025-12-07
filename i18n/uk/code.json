@@ -1,0 +1,14 @@
+{
+  "theme.navbar.items.Blog": {
+    "message": "Блог",
+    "description": "Navbar item with label Blog"
+  },
+  "theme.navbar.items.About": {
+    "message": "Про нас",
+    "description": "Navbar item with label About"
+  },
+  "theme.navbar.items.Contribute": {
+    "message": "Як опублікувати",
+    "description": "Navbar item with label Contribute"
+  }
+}

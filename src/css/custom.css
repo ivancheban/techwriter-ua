@@ -1,0 +1,161 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Import Google Fonts - 'Montserrat' supports Cyrillic/Ukrainian */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap&subset=cyrillic-ext');
+
+:root {
+  /* Core Colors - Orange Theme (#DE6209) */
+  --ifm-color-primary: #DE6209;
+  --ifm-color-primary-dark: #c85808;
+  --ifm-color-primary-darker: #bd5307;
+  --ifm-color-primary-darkest: #9b4406;
+  --ifm-color-primary-light: #f46c0a;
+  --ifm-color-primary-lighter: #f5761a;
+  --ifm-color-primary-lightest: #f8964d;
+
+  --ifm-font-family-base: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  --ifm-background-color: #ffffff;
+  --ifm-color-content: #1f2937; /* Slate-800 for high contrast text */
+  --ifm-link-color: var(--ifm-color-primary);
+  
+  /* Navigation */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.95);
+  --ifm-navbar-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --ifm-navbar-height: 4rem;
+
+  /* Cards */
+  --card-background: #ffffff;
+  --card-border-color: #e5e7eb; /* Gray-200 */
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Dark Mode Overrides */
+[data-theme='dark'] {
+  --ifm-color-primary: #f5761a; /* Lighter orange for better contrast in dark mode */
+  --ifm-color-primary-dark: #de6209;
+  --ifm-color-primary-darker: #c85808;
+  --ifm-color-primary-darkest: #9b4406;
+  --ifm-color-primary-light: #f68430;
+  --ifm-color-primary-lighter: #f78b3b;
+  --ifm-color-primary-lightest: #f9a05d;
+
+  --ifm-background-color: #111827; /* Gray-900 */
+  --ifm-color-content: #f9fafb; /* Gray-50 */
+  
+  --ifm-navbar-background-color: rgba(17, 24, 39, 0.95);
+  
+  --card-background: #1f2937; /* Gray-800 */
+  --card-border-color: #374151; /* Gray-700 */
+}
+
+/* Typography Improvements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-color-content);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2.75rem; line-height: 1.1; font-weight: 800; }
+h2 { font-size: 2rem; margin-top: 2.5rem; }
+
+/* Navbar Styling */
+.navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--card-border-color);
+}
+
+.navbar__title {
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.navbar__item {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Blog Post Card Styling */
+.blog-wrapper article, 
+.margin-bottom--xl { 
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border-color);
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-wrapper article:hover,
+.margin-bottom--xl:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: var(--ifm-color-primary);
+}
+
+/* Read More Button */
+.button--secondary {
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s;
+  background: transparent;
+}
+
+.button--secondary:hover {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff !important;
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--card-background);
+  border-top: 1px solid var(--card-border-color);
+  color: var(--ifm-color-content);
+}
+
+.footer__title {
+  color: var(--ifm-color-content);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Custom Image Styling for Maintainers */
+.maintainer-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.maintainer-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid var(--ifm-background-color);
+  box-shadow: 0 0 0 1px var(--card-border-color);
+}
+
+.container {
+  max-width: 1200px; 
+}
