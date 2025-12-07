@@ -19,11 +19,17 @@ const config = {
 
   // 1. Configure Internationalization
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'uk'],
+    defaultLocale: 'uk',
+    locales: ['uk', 'en'],
     localeConfigs: {
-      en: { label: 'English' },
-      uk: { label: 'Українська' },
+      uk: {
+        label: 'Українська',
+        htmlLang: 'uk-UA',
+      },
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+      },
     },
   },
 
@@ -34,9 +40,13 @@ const config = {
       ({
         docs: false,
         blog: {
-          routeBasePath: '/', // Blog at root
+          routeBasePath: '/blog', // Blog at /blog instead of root
           showReadingTime: true,
           blogSidebarTitle: 'Recent Posts',
+          postsPerPage: 10,
+        },
+        pages: {
+          // Translate pages in i18n subdirectories
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -57,7 +67,7 @@ const config = {
         items: [
           // 2. Define the items in English here. 
           // Docusaurus will look up translations in code.json based on the 'label' or 'to'.
-          {to: '/', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
           {to: '/contribute', label: 'Contribute', position: 'left'},
           

@@ -1,32 +1,32 @@
 ---
 slug: how-to-connect-madcap-flare-to-github
-title: How to connect MadCap Flare to GitHub
+title: Як підключити MadCap Flare до GitHub
 authors: [ivan]
 tags: [tech-writing, tools]
 date: 2023-10-25
 image: /img/madcap-flare-git.jpg
 ---
 
-Use these instructions to connect MadCap Flare to GitHub.
+Використовуйте ці інструкції для підключення вашого проекту MadCap Flare до GitHub.
 
-Our goal is to connect your MadCap Flare project to a repository in GitHub or GitLab. After connecting your project to Git, you will be able to commit all your changes to Git and sync this repository with any MadCap Flare project.
+Наша мета - підключити ваш проект MadCap Flare до репозиторію в GitHub або GitLab. Після підключення вашого проекту до Git ви зможете фіксувати всі свої зміни в Git та синхронізувати цей репозиторій з будь-яким проектом MadCap Flare.
 
 <!--truncate-->
 
-## Table of Contents
+## Зміст
 
-- [Table of Contents](#table-of-contents)
-- [Bind local MadCap project to GitHub](#bind-local-madcap-project-to-github)
-  - [Bind using the Flare interface](#bind-using-the-flare-interface)
-  - [Upload your Madcap project to GitHub using VS Code](#upload-your-madcap-project-to-github-using-vs-code)
-- [Import an existing MadCap project from Git](#import-an-existing-madcap-project-from-git)
-- [Connect MadCap Flare project to Git](#connect-madcap-flare-project-to-git)
+- [Зміст](#зміст)
+- [Прив'язання локального проекту MadCap до GitHub](#bind-local-madcap-project-to-github)
+  - [Прив'язання через інтерфейс Flare](#bind-using-the-flare-interface)
+  - [Завантажте ваш проект Madcap на GitHub за допомогою VS Code](#upload-your-madcap-project-to-github-using-vs-code)
+- [Імпортуйте існуючий проект MadCap з Git](#import-an-existing-madcap-project-from-git)
+- [Підключіть проект MadCap Flare до Git](#connect-madcap-flare-project-to-git)
 
-## Bind local MadCap project to GitHub
+## Bind local MadCap project to GitHub {#bind-local-madcap-project-to-github}
 
-In this scenario, you have a local MadCap Flare project on your computer. You want to bind this project to the repository in GitHub. Binding means connecting, uploading, or syncing the local files with the remote repository in the GitHub web interface.
+У цьому сценарії у вас є локальний проект MadCap Flare на вашому комп'ютері. Ви хочете прив'язати цей проект до репозиторію в GitHub. Прив'язання означає підключення, завантаження або синхронізацію локальних файлів з дистанційним репозиторієм у веб-інтерфейсі GitHub.
 
-### Bind using the Flare interface
+### Bind using the Flare interface {#bind-using-the-flare-interface}
 
 To bind your MadCap Flare project to the GitHub repository:
 
